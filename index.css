@@ -1,0 +1,1771 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+@media (min-width: 1280px) {
+  header {
+    background: url(./assets/background/header.png), lightgray no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 615px;
+    mix-blend-mode: color-burn;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+  .human {
+    background: url(./assets/human/header.png) no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 577px;
+    position: relative;
+  }
+  .human .name {
+    position: absolute;
+    bottom: 180px;
+    left: 80px;
+    color: #fff;
+    text-align: right;
+
+    width: 100px;
+    height: 74px;
+
+    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.6);
+    font-family: "Geogrotesque Cyr";
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 100;
+  }
+  .human .investor {
+    bottom: 200px;
+    right: 100px;
+    position: absolute;
+    color: #fff;
+    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.6);
+    font-family: "Geogrotesque Cyr";
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+  }
+  .circle {
+    width: 380px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 4px solid #fff;
+    background: var(
+      --123232,
+      radial-gradient(
+        139.66% 138.18% at 107.11% 22.34%,
+        rgba(11, 193, 98, 0.89) 7.55%,
+        rgba(0, 87, 255, 0.79) 90.54%
+      )
+    );
+    backdrop-filter: blur(6.5px);
+  }
+  .circle h1 {
+    width: 348.321px;
+    color: #fff;
+    text-align: center;
+    font-family: "Druk Text Wide Cy";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px; /* 106.667% */
+  }
+  .circle span {
+    width: 300px;
+    color: #fff;
+    text-align: center;
+    font-family: "Formular";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .wrapperSection {
+    position: absolute;
+    bottom: 60px;
+    width: calc(100% - 300px);
+    border-radius: 45px;
+    background: rgba(9, 51, 82, 0.8);
+    backdrop-filter: blur(7px);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  .wrapperRow {
+    text-align: justify;
+  }
+  .wrapperRow h2 {
+    margin: 0;
+    color: #fff;
+
+    font-family: "Druk Text Wide Cy";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40.5px; /* 92.045% */
+    text-transform: uppercase;
+  }
+  .wrapperRow span {
+    margin: 0;
+    color: #fff;
+    font-family: "Formular";
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40.5px;
+    letter-spacing: -1.65px;
+  }
+  .wrapperSection button {
+    padding: 20px;
+    height: 75px;
+    border-radius: 45px;
+    border: 3px solid #fff;
+    background: linear-gradient(
+      176deg,
+      rgba(83, 234, 80, 0.95) 0%,
+      rgba(2, 92, 142, 0.95) 100%
+    );
+    backdrop-filter: blur(7px);
+    color: #fff;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35.5px; /* 118.333% */
+    text-transform: uppercase;
+  }
+  .wrapperDraams {
+    padding: 200px;
+    background: linear-gradient(
+      180deg,
+      #fff 0%,
+      rgba(233, 246, 251, 0.56) 15.9%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-image: url(./assets/background/wrapperDreams.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 1434.154px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .askDream {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    border-radius: 47px;
+    border: 3px dashed #fff;
+    background: radial-gradient(
+      139.66% 138.18% at 107.11% 22.34%,
+      rgba(255, 255, 255, 0.23) 7.55%,
+      rgba(0, 87, 255, 0.2) 90.54%
+    );
+    backdrop-filter: blur(6px);
+  }
+  .askDream h3 {
+    color: #071829;
+    text-align: right;
+    font-family: "Geogrotesque Cyr";
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .wrapperListDreams {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    gap: 40px;
+  }
+  .containerWrapper {
+    background: radial-gradient(
+          circle at 100% 100%,
+          #ffffff 0,
+          #ffffff 19px,
+          transparent 19px
+        )
+        0% 0%/23px 23px no-repeat,
+      radial-gradient(
+          circle at 0 100%,
+          #ffffff 0,
+          #ffffff 19px,
+          transparent 19px
+        )
+        100% 0%/23px 23px no-repeat,
+      radial-gradient(
+          circle at 100% 0,
+          #ffffff 0,
+          #ffffff 19px,
+          transparent 19px
+        )
+        0% 100%/23px 23px no-repeat,
+      radial-gradient(circle at 0 0, #ffffff 0, #ffffff 19px, transparent 19px)
+        100% 100%/23px 23px no-repeat,
+      linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 8px)
+        calc(100% - 46px) no-repeat,
+      linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 46px)
+        calc(100% - 8px) no-repeat,
+      linear-gradient(134deg, #53ea50 0%, #0098ed 100%);
+    border-radius: 23px;
+    box-sizing: border-box;
+    opacity: 0.82;
+    backdrop-filter: blur(51.5px);
+    padding: 50px;
+    width: 450px;
+    height: 135px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .containerWrapper p {
+    color: #061a2f;
+    font-family: "Geogrotesque Cyr";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .poketWrapper .icon {
+    background: url(./assets/icons/icon_profit.svg) no-repeat;
+    width: 67px;
+    height: 63px;
+    margin-right: 50px;
+  }
+  .carWrapper .icon {
+    background: url(./assets/icons/icon_car.svg) no-repeat;
+    width: 67px;
+    height: 63px;
+    margin-right: 50px;
+  }
+  .flatWrapp .icon {
+    background: url(./assets/icons/icon_flat.svg) no-repeat;
+    width: 67px;
+    height: 63px;
+    margin-right: 50px;
+  }
+  .travelingWrapper .icon {
+    background: url(./assets/icons/icon_travelling.svg) no-repeat;
+    width: 75px;
+    height: 75px;
+    background-size: 100% 100%;
+    margin-right: 50px;
+  }
+  .arrow {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    background: url(./assets/icons/arrow_dream.png) no-repeat;
+    height: 100px;
+  }
+  .solutionDream {
+    height: 536.751px;
+    border-radius: 47px;
+    background: radial-gradient(
+      139.66% 138.18% at 107.11% 22.34%,
+      rgba(11, 193, 98, 0.59) 7.55%,
+      rgba(0, 87, 255, 0.53) 90.54%
+    );
+    backdrop-filter: blur(20.5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+  }
+  .solutionDream h3 {
+    color: #fff;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+  }
+  .solutionDream span {
+    margin: 30px;
+    color: #fff;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 78px; /* 390% */
+  }
+  .circlesPlusDescrip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrappCircles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .circles {
+    width: 103px;
+    height: 103px;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 100%;
+    border: 2px dashed #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #036;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: -0.27px;
+  }
+  .wrappUnderCircles {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .underCircle {
+    width: 200px;
+    color: #fff;
+    font-family: "Geogrotesque Cyr";
+    font-size: 18px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.27px;
+  }
+  .active {
+    background: #17b227;
+    color: #fff;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+  }
+  .arrowleft {
+    background: url(./assets/icons/arrowleft.svg) no-repeat;
+    width: 120px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  .profCource {
+    position: relative;
+    padding: 90px 90px 0 90px;
+    height: 800px;
+    background: url(./assets/background/map.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .profCource h3 {
+    color: #004796;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+  }
+  .wrapperHumanProf {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 92.5%;
+  }
+  .wrapperHumanProf ul {
+    color: #036;
+    font-family: "Geogrotesque";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 30px */
+    letter-spacing: 0.48px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    counter-reset: my-awesome-counter;
+  }
+  .wrapperHumanProf ul > li {
+    counter-increment: my-awesome-counter;
+    margin: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .wrapperHumanProf ul > li::before {
+    content: counter(my-awesome-counter);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #0097f0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-family: "TYPOGRAPH PRO";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 50px */
+    letter-spacing: 0.8px;
+  }
+  .humanProf {
+    background: url(./assets/human/course.png) no-repeat;
+    height: 100%;
+    width: 474px;
+    background-size: 100% 100%;
+  }
+  .wrappButton {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    height: 177px;
+    background: rgb(83, 234, 80);
+    background: linear-gradient(
+      90deg,
+      rgba(83, 234, 80, 1) 0%,
+      rgba(0, 152, 237, 1) 100%
+    );
+  }
+  .wrappButton button {
+    width: 135.788px;
+    height: 135.788px;
+    border: white 2px solid;
+    border-radius: 50%;
+    background: radial-gradient(
+      139.66% 138.18% at 107.11% 22.34%,
+      rgba(11, 193, 98, 0.89) 7.55%,
+      rgba(0, 87, 255, 0.79) 90.54%
+    );
+    color: #fff;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 85.1%; /* 24.679px */
+  }
+  .aboutMe {
+    height: 611.812px;
+    padding: 70px;
+    background: rgb(116, 140, 162);
+  }
+  .aboutMe h3 {
+    color: #fff;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+  }
+  .aboutMe .wrapperSpanPhoto {
+    margin: 0 20%;
+    margin-top: 100px;
+    display: block;
+    position: relative;
+    width: 681.374px;
+    padding: 50px 150px 50px 50px;
+    box-sizing: border-box;
+    border-radius: 42px;
+    background: rgba(252, 252, 252, 0.2);
+
+    backdrop-filter: blur(2px);
+  }
+  .wrapperSpanPhoto span {
+    color: #000000;
+    font-family: "Geogrotesque";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 22.5px */
+    letter-spacing: 0.36px;
+  }
+  .wrapperSpanPhoto .circlePhoto {
+    position: absolute;
+    background: url(./assets/human/circle.png) no-repeat;
+    width: 300px;
+    height: 300px;
+    right: -200px;
+    top: 10%;
+  }
+
+  .aboutClients {
+    padding: 90px;
+    height: 2024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 255, 255, 0) 0%,
+      #c6c6c6 100%
+    );
+  }
+  .aboutClients h3 {
+    color: #061a2f;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+  }
+  .wrappAboutClients {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .messageClients {
+    position: relative;
+    align-self: flex-start;
+    background: url(./assets/chat/other.svg) no-repeat;
+    width: 580px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 40px 70px;
+  }
+  .messageMe {
+    position: relative;
+    align-self: flex-end;
+    background: url(./assets/chat/me.svg) no-repeat;
+    width: 580px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 70px 40px 40px;
+  }
+  .message {
+    width: 490px;
+    color: #fff;
+    font-family: "Geogrotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0.4px;
+  }
+  .photo {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  .photoClient {
+    bottom: 80px;
+    left: -90px;
+  }
+  .photoClient1 {
+    background: url(./assets/chat/client1.png) no-repeat;
+    background-size: contain;
+  }
+  .photoClient2 {
+    background: url(./assets/chat/client2.png) no-repeat;
+    background-size: contain;
+  }
+  .photoClient3 {
+    background: url(./assets/chat/client3.png) no-repeat;
+    background-size: contain;
+  }
+  .photoMe {
+    background: url(./assets/human/circle.png) no-repeat;
+    background-size: contain;
+    bottom: 80px;
+    right: 0;
+  }
+  .aboutClients p {
+    color: #838383;
+    text-align: right;
+    font-family: "Geogrotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0.4px;
+  }
+  footer {
+    background: url(./assets/background/footer.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 100px;
+  }
+  footer h3 {
+    color: #061a2f;
+    text-align: center;
+    font-family: "Geogrotesque";
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 102.5%; /* 53.3px */
+    letter-spacing: 1.04px;
+    text-transform: uppercase;
+  }
+  .wrappPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    gap: 100px;
+  }
+  .wrappOutPage {
+    width: 404px;
+    height: 700px;
+    padding: 40px;
+    border-radius: 44px;
+    border: 3px solid #f91a23;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(25.5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wrappOutPage h4 {
+    color: #ea5050;
+    text-align: right;
+    font-family: "Geogrotesque";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 32.5px */
+    letter-spacing: 0.52px;
+    text-transform: uppercase;
+  }
+  .wrappOutPage ul {
+    color: #051529;
+    font-family: "Geogrotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0.4px;
+  }
+  .wrappOutPage p {
+    color: #f91a23;
+    font-family: "Geogrotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0.4px;
+  }
+  .wrappCourseIn {
+    width: 404px;
+    height: 700px;
+    border-radius: 44px;
+    border: 3px solid #0bc162;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(25.5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  .wrappCourseIn h4 {
+    color: #0bc162;
+    font-family: "Geogrotesque";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 32.5px */
+    letter-spacing: 0.52px;
+    text-transform: uppercase;
+  }
+  .wrappCourseIn ul {
+    color: #000;
+    font-family: "Geogrotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0.4px;
+  }
+  .wrappCourseIn p {
+    color: rgba(11, 193, 98, 0.89);
+    font-family: "Geogrotesque";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 26.25px */
+    letter-spacing: 0.42px;
+  }
+  .wrapperForm {
+    height: 470px;
+    width: 80%;
+    border-radius: 34px;
+    border: 2px solid #2563eb;
+    background: rgba(16, 90, 255, 0.73);
+    backdrop-filter: blur(5.5px);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 100px 50px 0;
+    align-items: flex-start;
+    position: relative;
+    margin: 150px auto;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 50px;
+  }
+  .container .photoMe {
+    background: url(./assets/human/circle.png) no-repeat;
+    width: 363px;
+    height: 363px;
+    background-size: contain;
+    position: absolute;
+    top: 15%;
+    left: -100px;
+  }
+  .container h4 {
+    display: block;
+    width: 500px;
+    color: #fff;
+    font-family: "Geogrotesque Cyr";
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 61px; /* 110.909% */
+    text-transform: uppercase;
+  }
+  strong {
+    color: #fff;
+    font-family: "Geogrotesque Cyr";
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 61px;
+    text-transform: uppercase;
+  }
+  form {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  form input {
+    padding: 10px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #0097f0;
+    background: #fff;
+  }
+  input::placeholder {
+    color: #036;
+    font-family: "TYPOGRAPH PRO";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 19.6px */
+  }
+  .wrapperForm button {
+    position: absolute;
+    bottom: 50px;
+    right: 80px;
+    border-radius: 45px;
+    border: 3px solid #fff;
+    background: linear-gradient(
+      176deg,
+      rgba(83, 234, 80, 0.95) 0%,
+      rgba(2, 92, 142, 0.95) 100%
+    );
+    backdrop-filter: blur(7px);
+    width: 450px;
+    height: 75px;
+    color: #fff;
+    text-align: center;
+    font-family: Geogrotesque Cyr;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35.5px; /* 118.333% */
+    text-transform: uppercase;
+  }
+  .country {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 50px;
+    padding: 0 5px;
+    border-radius: 9px;
+    background: rgba(148, 154, 175, 0.75);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: "TYPOGRAPH PRO";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+  }
+  .flag {
+    background: url(./assets/icons/flag.svg) no-repeat;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+  }
+  div#phone {
+    padding: 10px 10px 10px 90px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #0097f0;
+    background: #fff;
+    color: #036;
+    font-family: "TYPOGRAPH PRO";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative; /* 25.2px */
+  }
+}
+@media (max-width: 767px) {
+  header {
+    background: url(./assets/background/header.png), lightgray no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    mix-blend-mode: color-burn;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+  }
+  .human {
+    z-index: 1;
+    background: url(./assets/human/header.png) no-repeat;
+    background-size: contain;
+    height: 77%;
+    width: 370px;
+    bottom: 0;
+    position: absolute;
+  }
+  .human .name {
+    position: absolute;
+    bottom: 160px;
+    left: 10px;
+    color: #fff;
+    text-align: right;
+
+    width: 100px;
+    height: 74px;
+
+    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.6);
+    font-family: "Geogrotesque Cyr";
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 100;
+  }
+  .human .investor {
+    bottom: 210px;
+    right: 10px;
+    position: absolute;
+    color: #fff;
+    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.6);
+    font-family: "Geogrotesque Cyr";
+    font-size: 8px;
+    font-style: italic;
+    font-weight: 400;
+  }
+  .circle {
+    width: 218px;
+    height: 218px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 4px solid #fff;
+    background: var(
+      --123232,
+      radial-gradient(
+        139.66% 138.18% at 107.11% 22.34%,
+        rgba(11, 193, 98, 0.89) 7.55%,
+        rgba(0, 87, 255, 0.79) 90.54%
+      )
+    );
+    padding: 0.5em;
+    backdrop-filter: blur(6.5px);
+  }
+  .circle h1 {
+    color: #fff;
+    text-align: center;
+    font-family: "Druk Text Wide Cy";
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+  }
+  .circle span {
+    display: block;
+    width: 100px;
+    height: 77px;
+    color: #fff;
+    text-align: center;
+    font-family: "Formular";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .wrapperSection {
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    border-radius: 45px;
+    background: rgba(9, 51, 82, 0.8);
+    backdrop-filter: blur(7px);
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .wrapperRow {
+    text-align: center;
+  }
+  .wrapperRow h2 {
+    margin: 0 auto;
+    color: #fff;
+    width: 60%;
+    font-family: "Druk Text Wide Cy";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .wrapperRow span {
+    margin: 0 auto;
+    display: block;
+    width: 65%;
+    color: #fff;
+    font-family: "Formular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .wrapperSection button {
+    padding: 10px;
+    height: 60px;
+    border-radius: 45px;
+    border: 3px solid #fff;
+    background: linear-gradient(
+      176deg,
+      rgba(83, 234, 80, 0.95) 0%,
+      rgba(2, 92, 142, 0.95) 100%
+    );
+    backdrop-filter: blur(7px);
+    color: #fff;
+    text-align: center;
+
+    font-family: "Geogrotesque Cyr";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .wrapperDraams {
+    padding: 10px;
+    background: linear-gradient(
+      180deg,
+      #fff 0%,
+      rgba(233, 246, 251, 0.56) 15.9%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-image: url(./assets/background/wrapperDreams.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .askDream {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 47px;
+    border: 3px dashed #fff;
+    background: radial-gradient(
+      139.66% 138.18% at 107.11% 22.34%,
+      rgba(255, 255, 255, 0.23) 7.55%,
+      rgba(0, 87, 255, 0.2) 90.54%
+    );
+    backdrop-filter: blur(6px);
+  }
+  .askDream h3 {
+    color: #071829;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .wrapperListDreams {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    gap: 40px;
+  }
+  .containerWrapper {
+    background: radial-gradient(
+          circle at 100% 100%,
+          #ffffff 0,
+          #ffffff 19px,
+          transparent 19px
+        )
+        0% 0%/23px 23px no-repeat,
+      radial-gradient(
+          circle at 0 100%,
+          #ffffff 0,
+          #ffffff 19px,
+          transparent 19px
+        )
+        100% 0%/23px 23px no-repeat,
+      radial-gradient(
+          circle at 100% 0,
+          #ffffff 0,
+          #ffffff 19px,
+          transparent 19px
+        )
+        0% 100%/23px 23px no-repeat,
+      radial-gradient(circle at 0 0, #ffffff 0, #ffffff 19px, transparent 19px)
+        100% 100%/23px 23px no-repeat,
+      linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 8px)
+        calc(100% - 46px) no-repeat,
+      linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 46px)
+        calc(100% - 8px) no-repeat,
+      linear-gradient(134deg, #53ea50 0%, #0098ed 100%);
+    border-radius: 23px;
+    box-sizing: border-box;
+    opacity: 0.82;
+    backdrop-filter: blur(51.5px);
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .containerWrapper p {
+    color: #061a2f;
+    font-family: "Geogrotesque Cyr";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .poketWrapper .icon {
+    background: url(./assets/icons/icon_profit.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    margin-right: 50px;
+  }
+  .carWrapper .icon {
+    background: url(./assets/icons/icon_car.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    margin-right: 50px;
+  }
+  .flatWrapp .icon {
+    background: url(./assets/icons/icon_flat.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    margin-right: 50px;
+  }
+  .travelingWrapper .icon {
+    background: url(./assets/icons/icon_travelling.svg) no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    margin-right: 50px;
+  }
+  .arrow {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    background: url(./assets/icons/arrow_dream.png) no-repeat;
+    height: 100px;
+  }
+  .solutionDream {
+    border-radius: 47px;
+    background: radial-gradient(
+      139.66% 138.18% at 107.11% 22.34%,
+      rgba(11, 193, 98, 0.59) 7.55%,
+      rgba(0, 87, 255, 0.53) 90.54%
+    );
+    backdrop-filter: blur(20.5px);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px 5px;
+  }
+  .solutionDream h3 {
+    color: #fff;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .solutionDream span {
+    margin: 30px;
+    color: #fff;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .circlesPlusDescrip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .wrappCircles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .circles {
+    width: 103px;
+    height: 103px;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 100%;
+    border: 2px dashed #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #036;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: -0.27px;
+  }
+  .wrappUnderCircles {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 75px;
+  }
+  .underCircle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 103px;
+    color: #fff;
+    font-family: "Geogrotesque Cyr";
+    font-size: 18px;
+    font-style: normal;
+    text-align: left;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.27px;
+  }
+  .active {
+    background: #17b227;
+    color: #fff;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+  }
+  .arrowleft {
+    background: url(./assets/icons/arrowDown.svg) no-repeat;
+    width: 12px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  .profCource {
+    position: relative;
+    padding: 20px 10px 0;
+    background: rgba(231, 246, 255, 0.34);
+    backdrop-filter: blur(50px);
+    background-image: url(./assets/background/adaptivmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .profCource h3 {
+    color: #004796;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+  }
+  .wrapperHumanProf {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 92.5%;
+    margin-top: 50px;
+  }
+  .wrapperHumanProf ul {
+    color: #036;
+    font-family: "Geogrotesque";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 30px */
+    letter-spacing: 0.48px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    counter-reset: my-awesome-counter;
+  }
+  .wrapperHumanProf ul > li {
+    counter-increment: my-awesome-counter;
+    margin: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .wrapperHumanProf ul > li::before {
+    content: counter(my-awesome-counter);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #0097f0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-family: "TYPOGRAPH PRO";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 50px */
+    letter-spacing: 0.8px;
+  }
+  .humanProf {
+    background: url(./assets/human/course.png) no-repeat;
+    height: 430px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    margin-top: 150px;
+  }
+  .wrappButton {
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+    width: 120px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    height: 130px;
+    background: rgb(83, 234, 80);
+    background: linear-gradient(
+      90deg,
+      rgba(83, 234, 80, 1) 0%,
+      rgba(0, 152, 237, 1) 100%
+    );
+  }
+  .wrappButton button {
+    width: 80.788px;
+    height: 80.788px;
+    border: white 2px solid;
+    border-radius: 50%;
+    background: radial-gradient(
+      139.66% 138.18% at 107.11% 22.34%,
+      rgba(11, 193, 98, 0.89) 7.55%,
+      rgba(0, 87, 255, 0.79) 90.54%
+    );
+    color: #fff;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 85.1%; /* 24.679px */
+  }
+  .aboutMe {
+    padding: 70px 70px 120px;
+    background: rgb(116, 140, 162);
+  }
+  .aboutMe h3 {
+    color: #fff;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+  }
+  .aboutMe .wrapperSpanPhoto {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    position: relative;
+    padding: 40px 0 120px;
+    box-sizing: border-box;
+    border-radius: 42px;
+    background: rgba(252, 252, 252, 0.2);
+
+    backdrop-filter: blur(2px);
+  }
+  .wrapperSpanPhoto span {
+    display: block;
+    color: #000000;
+    font-family: "Geogrotesque";
+    margin: 0 auto;
+    width: 200px;
+    color: #051529;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 20px */
+    letter-spacing: 0.32px;
+  }
+  .wrapperSpanPhoto .circlePhoto {
+    position: absolute;
+    background: url(./assets/human/circle.png) no-repeat;
+    background-size: contain;
+    width: 190px;
+    height: 190px;
+    right: 0;
+    bottom: -80px;
+  }
+
+  .aboutClients {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 255, 255, 0) 0%,
+      #c6c6c6 100%
+    );
+  }
+  .aboutClients h3 {
+    color: #061a2f;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.26px;
+    text-transform: uppercase;
+  }
+  .wrappAboutClients {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+  .messageClients {
+    position: relative;
+    background: url(./assets/chat/adaptivother.svg) no-repeat;
+    width: 200.09px;
+    height: 200px;
+    display: flex;
+    background-size: 100% 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .messageMe {
+    position: relative;
+    background: url(./assets/chat/adaptivme.svg) no-repeat;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    background-size: 100% 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .message {
+    height: 100%;
+    color: #fff;
+    text-align: start;
+    font-family: "Geogrotesque";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+  }
+  .photo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .photoClient {
+    bottom: 0px;
+    left: -50px;
+  }
+  .photoClient1 {
+    background: url(./assets/chat/client1.png) no-repeat;
+    background-size: contain;
+  }
+  .photoClient2 {
+    background: url(./assets/chat/client2.png) no-repeat;
+    background-size: contain;
+  }
+  .photoClient3 {
+    background: url(./assets/chat/client3.png) no-repeat;
+    background-size: contain;
+  }
+  .photoMe {
+    background: url(./assets/human/circle.png) no-repeat;
+    background-size: contain;
+    bottom: -10px;
+    right: -50px;
+  }
+  .aboutClients p {
+    margin-top: 50px;
+    width: 340px;
+    color: #838383;
+    text-align: justify;
+    font-family: Geogrotesque;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0.4px;
+  }
+  footer {
+    background: url(./assets/background/footer.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 30px;
+  }
+  footer h3 {
+    color: #061a2f;
+    text-align: center;
+    font-family: "Geogrotesque";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1.04px;
+    text-transform: uppercase;
+  }
+  .wrappPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    gap: 50px;
+  }
+  .wrappOutPage {
+    padding: 20px;
+    border-radius: 44px;
+    border: 3px solid #f91a23;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(25.5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wrappOutPage h4 {
+    color: #ea5050;
+    text-align: center;
+    font-family: "Geogrotesque";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 32.5px */
+    letter-spacing: 0.52px;
+    text-transform: uppercase;
+  }
+  .wrappOutPage ul {
+    color: #051529;
+    font-family: "Geogrotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0.4px;
+  }
+  .wrappOutPage p {
+    text-align: center;
+    color: #f91a23;
+    font-family: "Geogrotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0.4px;
+  }
+  .wrappCourseIn {
+    border-radius: 44px;
+    border: 3px solid #0bc162;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(25.5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+  }
+  .wrappCourseIn h4 {
+    text-align: center;
+    color: #0bc162;
+    font-family: "Geogrotesque";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 32.5px */
+    letter-spacing: 0.52px;
+    text-transform: uppercase;
+  }
+  .wrappCourseIn ul {
+    color: #000;
+    font-family: "Geogrotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0.4px;
+  }
+  .wrappCourseIn p {
+    color: rgba(11, 193, 98, 0.89);
+    font-family: "Geogrotesque";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 26.25px */
+    letter-spacing: 0.42px;
+  }
+  .wrapperForm {
+    height: 800px;
+    width: 80%;
+    border-radius: 34px;
+    border: 2px solid #2563eb;
+    background: rgba(16, 90, 255, 0.73);
+    backdrop-filter: blur(5.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 100px 20px 0;
+    align-items: flex-start;
+    position: relative;
+    margin: 150px auto;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .container .photoMe {
+    background: url(./assets/human/circle.png) no-repeat;
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    position: absolute;
+    top: -100px;
+    left: 40%;
+  }
+  .container h4 {
+    display: block;
+    color: #fff;
+    font-family: "Geogrotesque Cyr";
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 61px; /* 110.909% */
+    text-transform: uppercase;
+  }
+  strong {
+    color: #fff;
+    font-family: "Geogrotesque Cyr";
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 61px;
+    text-transform: uppercase;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  form input {
+    padding: 10px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #0097f0;
+    background: #fff;
+  }
+  input::placeholder {
+    color: #036;
+    font-family: "TYPOGRAPH PRO";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 19.6px */
+  }
+  .wrapperForm button {
+    border-radius: 45px;
+    border: 3px solid #fff;
+    background: linear-gradient(
+      176deg,
+      rgba(83, 234, 80, 0.95) 0%,
+      rgba(2, 92, 142, 0.95) 100%
+    );
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 75px;
+    color: #fff;
+    text-align: center;
+    font-family: "Geogrotesque Cyr";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35.5px; /* 118.333% */
+    text-transform: uppercase;
+  }
+  .country {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 50px;
+    padding: 0 5px;
+    border-radius: 9px;
+    background: rgba(148, 154, 175, 0.75);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: "TYPOGRAPH PRO";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+  }
+  .flag {
+    background: url(./assets/icons/flag.svg) no-repeat;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+  }
+  div#phone {
+    padding: 10px 10px 10px 90px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #0097f0;
+    background: #fff;
+    color: #036;
+    font-family: "TYPOGRAPH PRO";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative; /* 25.2px */
+  }
+}
